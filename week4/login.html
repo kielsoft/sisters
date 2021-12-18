@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+        }
+
+        .login-box {
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        .field-group {
+            margin: 10px;
+            text-align: center;
+            border: thin solid white;
+        }
+
+        .field-group label {
+            width: 40px;
+            display: inline-block;
+            text-align: right;
+        }
+
+        .field-group input {
+            height: 40px;
+            width: 120px;
+            font-size: 25px;
+            background-color: transparent;
+            color: white;
+            border: none;
+        }
+
+        #submitButton {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            background-color: #d6d6d6;
+            color: navy;
+            font-weight: bold;
+            text-align: center;
+            height: 40px;
+            border: none;
+            box-shadow: 3px 3px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <form>
+            <div class="field-group">
+                <label>F:</label>
+                <input type="text" />
+            </div>
+            <div class="field-group">
+                <label>S:</label>
+                <input type="text" />
+            </div>
+            <div class="field-group">
+                <label>E:</label>
+                <input type="text" />
+            </div>
+            <input id="submitButton" value="Save My Form" type="submit">
+        </form>
+    </div>
+</body>
+</html>
