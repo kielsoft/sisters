@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+    <link href="css/regular.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #001CB5;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        form {
+            display: inline-block;
+            min-height: 100px;
+            margin-top: 200px;
+        }
+
+        .field-group {
+            border: thin solid white;
+            margin: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .field-group span {
+            width: 40px;
+            line-height: 40px;
+        }
+        
+        .field-group input {
+            width: 250px;
+            height: 40px;
+            margin: 5px;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .field-group input:focus {
+            outline: none;
+        }
+
+        #submitButton {
+            background-color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            height: 40px;
+            text-transform: uppercase;
+            display: block;
+            width: 311px;
+            margin: 10px;
+            box-shadow: 3px 3px 5px #222222;
+            color: #001CB5;
+        }
+
+        .links {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        #forgotPasswordLink {
+            text-align: right;
+            display: block;
+            margin: 10px;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <form method="POST">
+            <div class="field-group">
+                <span for="username" class="far fa-user"></span>
+                <input type="text" name="username" placeholder="Your username" />
+            </div>
+            <div class="field-group">
+                <span for="password" class="fas fa-lock"></span>
+                <input type="password" name="password" placeholder="Your password" />
+            </div>
+            <input id="submitButton" type="submit" value="Login" />
+            <div>
+                <a id="forgotPasswordLink" class="links" href="revision.html">Forgot password?</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
